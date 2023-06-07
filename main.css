@@ -1,0 +1,180 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+    border-radius: 30px;
+    background-color: white;
+    width: 650px;
+}
+
+.card-conrainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    background: rgb(103, 67, 255);
+    background: linear-gradient(0deg, rgba(103, 67, 255, 1) 0%, rgba(78, 56, 245, 1) 35%, rgba(48, 45, 229, 1) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.left .title {
+    color: #ffffff;
+}
+
+.left .circle {
+    width: 150px;
+    height: 150px;
+    background-color: #4827d0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0 0;
+}
+
+.left p {
+    color: white;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.left b {
+    color: white;
+    font-size: 30px;
+    margin: 20px
+}
+
+.rigth {
+    width: 50%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rigth .title {
+    color: #000;
+    margin: 0;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: antiquewhite;
+}
+
+.row img {
+    display: flex;
+    padding: 0 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.row p {
+    margin-right: 10px;
+    color: gray;
+}
+
+.row p b {
+    color: #2f2d3a;
+
+}
+
+.bgred {
+    background-color: rgb(255, 216, 216);
+    color: red;
+}
+
+.bgorange {
+    background-color: rgb(245, 234, 206);
+    color: orange;
+}
+
+.bggreen {
+    background-color: rgb(214, 255, 224);
+    color: green;
+}
+
+.bgblue {
+    background-color: rgb(210, 216, 251);
+    color: rgb(5, 5, 171);
+}
+
+.btn {
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #2f2d3a;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 15px 25px;
+
+}
+
+@media (max-width: 600px) {
+    body{
+        margin: 0;
+        
+    }
+
+    .card {
+        width: 375px;
+        box-shadow: 0 0 0;
+    }
+
+    .card-conrainer {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .rigth {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .rigth .title{
+        margin: 10px;
+    }
+
+    .row{
+        margin: 10px;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+}
